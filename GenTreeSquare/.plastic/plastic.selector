@@ -1,0 +1,4 @@
+repository "GenTreeSquare@MetxArtGames@cloud"
+  path "/"
+    br "/main"
+    co "/main"
