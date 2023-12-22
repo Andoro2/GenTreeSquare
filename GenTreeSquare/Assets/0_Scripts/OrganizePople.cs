@@ -10,7 +10,7 @@ public class OrganizePople : MonoBehaviour
         GameObject[] PersonasArray = GameObject.FindGameObjectsWithTag("Person");
         Vector3 GridPlace = new Vector3(-4f, 0f, 0.2f);
         int i = 0;
-        Array.Sort(PersonasArray, (persona1, persona2) => string.Compare(persona1.GetComponent<Person>().Humano.FirstSurname, persona2.GetComponent<Person>().Humano.FirstSurname, StringComparison.Ordinal));
+        Array.Sort(PersonasArray, (persona1, persona2) => string.Compare(persona1.GetComponent<Person>().Humano.Surname1, persona2.GetComponent<Person>().Humano.Surname1, StringComparison.Ordinal));
         
         foreach (GameObject persona in PersonasArray)
         {

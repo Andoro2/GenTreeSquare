@@ -19,10 +19,12 @@ public class CreatePeople : MonoBehaviour
     public List<string> People = new List<string> { "Ninguno" };
     public List<GameObject> ExistingPeople = new List<GameObject>();
     public int PeopleCounter = 0;
+    public List<Persona> PeopleRegistry = new List<Persona>();
 
     void Start()
     {
         ExistingPeople = PeopleList.ExistingPeople;
+        PeopleRegistry = PeopleList.PeopleRegistry.Registry;
         //AddToDropdown(FatherDropdown);
         //AddToDropdown(MotherDropdown);
         //AddToDropdown(PartnerDropdown);
@@ -64,31 +66,35 @@ public class CreatePeople : MonoBehaviour
         PeopleDropdown.ClearOptions();
         PeopleDropdown.AddOptions(People);
     }
-
-    public void Create()
+    public void AssignData()
     {
-        if (FirstNameInput.text != "" && FirstSurnameInput.text != "" && ((FatherDropdown.value == 0 ||  MotherDropdown.value == 0) || FatherDropdown.value != MotherDropdown.value))
+
+    }
+    public void CreateByInput()
+    {
+        if (FirstNameInput.text != "" && FirstSurnameInput.text != ""
+            && ((FatherDropdown.value == 0 || MotherDropdown.value == 0) || FatherDropdown.value != MotherDropdown.value))
         {
             GameObject Penya = Instantiate(Persona, new Vector3(0f, 0f, 0.5f), Quaternion.identity);
             Penya.transform.Find("Canvas").Find("NameTMP").GetComponent<TextMeshProUGUI>().text = FirstNameInput.text;
             Penya.transform.parent = GameObject.FindWithTag("PeopleManager").gameObject.transform;
 
             Persona PersonData = Penya.GetComponent<Person>().Humano;
-            Penya.name = (PeopleCounter + 1).ToString() + "_" + FirstNameInput.text + SecondNameInput.text;
+            Penya.name = (PeopleCounter + 1).ToString() + "_" + FirstNameInput.text + SecondNameInput.text + FirstSurnameInput.text;
 
-
+            PersonData.ID = PeopleCounter + 1;
             PersonData.FirstName = FirstNameInput.text;
             FirstNameInput.text = "";
             PersonData.SecondName = SecondNameInput.text;
             SecondNameInput.text = "";
             PersonData.NickName = NickNameInput.text;
             NickNameInput.text = "";
-            PersonData.FirstSurname = FirstSurnameInput.text;
+            PersonData.Surname1 = FirstSurnameInput.text;
             FirstSurnameInput.text = "";
-            PersonData.SecondSurname = SecondSurnameInput.text;
+            PersonData.Surname2 = SecondSurnameInput.text;
             SecondSurnameInput.text = "";
 
-            if (BirthDateInput.text != "Select a date")
+            if (BirthDateInput.text.Length > 1)
             {
                 string FechaNacimiento = BirthDateInput.text;
 
@@ -100,9 +106,9 @@ public class CreatePeople : MonoBehaviour
                 int.TryParse(mesString, out int BirthMonth) &&
                 int.TryParse(diaString, out int BirthDay))
                 {
-                    PersonData.BirthDay = BirthDay;
-                    PersonData.BirthMonth = BirthMonth;
-                    PersonData.BirthYear = BirthYear;
+                    PersonData.BirthDate.Day = BirthDay;
+                    PersonData.BirthDate.Month = BirthMonth;
+                    PersonData.BirthDate.Year = BirthYear;
                 }
 
                 BirthDateInput.text = "";
@@ -111,23 +117,25 @@ public class CreatePeople : MonoBehaviour
             switch (SexDropDown.value)
                 {
                     case 0:
-                        PersonData.Gender = global::Persona.Genders.Male;
+                        PersonData.Gender = global::Genders.Male;
                         break;
                     case 1:
-                        PersonData.Gender = global::Persona.Genders.Female;
+                        PersonData.Gender = global::Genders.Female;
                         break;
                     case 2:
-                        PersonData.Gender = global::Persona.Genders.Other;
+                        PersonData.Gender = global::Genders.Other;
                         break;
                 }
 
-            if (FatherDropdown.value != 0) PersonData.Father = ExistingPeople[FatherDropdown.value - 1];
-            if (MotherDropdown.value != 0) PersonData.Mother = ExistingPeople[MotherDropdown.value - 1];
-            if (PartnerDropdown.value != 0) PersonData.Partner = ExistingPeople[PartnerDropdown.value - 1];
-
-            //CounterID++;
+            if (FatherDropdown.value != 0) PersonData.FatherID = ExistingPeople[FatherDropdown.value - 1].gameObject.GetComponent<Person>().Humano.ID;
+            if (MotherDropdown.value != 0) PersonData.MotherID = ExistingPeople[MotherDropdown.value - 1].gameObject.GetComponent<Person>().Humano.ID;
+            if (PartnerDropdown.value != 0) PersonData.PartnerID = ExistingPeople[PartnerDropdown.value - 1].gameObject.GetComponent<Person>().Humano.ID;
 
             ExistingPeople.Add(Penya);
+            PeopleRegistry.Add(PersonData);
+
+            PeopleList.SaveToJSON();
+            //CounterID++;
         }
         else if (FatherDropdown.value == MotherDropdown.value)
         {
@@ -147,38 +155,20 @@ public class CreatePeople : MonoBehaviour
             Penya.transform.parent = GameObject.FindWithTag("PeopleManager").gameObject.transform;
 
             Persona PersonData = Penya.GetComponent<Person>().Humano;
-            Penya.name = (CounterID + 1).ToString() + "_" + Personas[CounterID - 1].FirstName + Personas[CounterID - 1].FirstSurname;
+            Penya.name = (CounterID + 1).ToString() + "_" + Personas[CounterID - 1].FirstName + Personas[CounterID - 1].Surname1;
 
+            PersonData.ID = CounterID;
             PersonData.FirstName = Personas[CounterID - 1].FirstName;
             PersonData.SecondName = Personas[CounterID - 1].SecondName;
             PersonData.NickName = Personas[CounterID - 1].NickName;
-            PersonData.FirstSurname = Personas[CounterID - 1].FirstSurname;
-            PersonData.SecondSurname = Personas[CounterID - 1].SecondSurname;
-            PersonData.BirthDay = Personas[CounterID - 1].BirthDay;
-            PersonData.BirthMonth = Personas[CounterID - 1].BirthMonth;
-            PersonData.BirthYear = Personas[CounterID - 1].BirthYear;
+            PersonData.Surname1 = Personas[CounterID - 1].Surname1;
+            PersonData.Surname2 = Personas[CounterID - 1].Surname2;
+            PersonData.BirthDate.Day = Personas[CounterID - 1].BirthDate.Day;
+            PersonData.BirthDate.Month = Personas[CounterID - 1].BirthDate.Month;
+            PersonData.BirthDate.Year = Personas[CounterID - 1].BirthDate.Year;
             PersonData.Gender = Personas[CounterID - 1].Gender;
 
             CounterID++;
         }
     }
-}
-
-[System.Serializable]
-public class Persona
-{
-    public string FirstName,
-        SecondName,
-        NickName,
-        FirstSurname,
-        SecondSurname;
-    public Sprite Photo;
-    public enum Genders { Male, Female, Other }
-    [SerializeField] public Genders Gender;
-    public int BirthDay, BirthMonth, BirthYear;
-    public GameObject Father,
-        Mother,
-        Partner;
-    public List<GameObject> Siblings = new List<GameObject>(),
-        Children = new List<GameObject>();
 }

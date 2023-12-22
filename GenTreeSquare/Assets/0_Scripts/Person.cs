@@ -33,10 +33,11 @@ public class Person : MonoBehaviour
     {
         for (int i = 0; i < People.Length; i++)
         {
-            if (People[i] != gameObject && !Humano.Siblings.Contains(People[i]) && People[i].GetComponent<Person>().Humano.Father.gameObject != null
-                && People[i].GetComponent<Person>().Humano.Father.gameObject == Humano.Father.gameObject && People[i].GetComponent<Person>().Humano.Mother.gameObject == Humano.Mother.gameObject)
+            if (People[i].GetComponent<Person>().Humano != Humano && !Humano.SiblingsID.Contains(People[i].GetComponent<Person>().Humano.ID)
+                && (People[i].GetComponent<Person>().Humano.FatherID != 0 && People[i].GetComponent<Person>().Humano.FatherID == Humano.FatherID
+                || People[i].GetComponent<Person>().Humano.MotherID != 0 && People[i].GetComponent<Person>().Humano.MotherID == Humano.MotherID))
             {
-                Humano.Siblings.Add(People[i].gameObject);
+                Humano.SiblingsID.Add(People[i].GetComponent<Person>().Humano.ID);
             }
         }
     }
@@ -44,10 +45,10 @@ public class Person : MonoBehaviour
     {
         for (int i = 0; i < People.Length; i++)
         {
-            if (People[i] != gameObject && !Humano.Children.Contains(People[i]) 
-                && (People[i].GetComponent<Person>().Humano.Father.gameObject == gameObject || People[i].GetComponent<Person>().Humano.Mother.gameObject == gameObject))
+            if (People[i].GetComponent<Person>().Humano.ID != Humano.ID && !Humano.ChildrenID.Contains(People[i].GetComponent<Person>().Humano.ID)
+                && (People[i].GetComponent<Person>().Humano.FatherID == Humano.ID || People[i].GetComponent<Person>().Humano.MotherID == Humano.ID))
             {
-                Humano.Children.Add(People[i].gameObject);
+                Humano.ChildrenID.Add(People[i].GetComponent<Person>().Humano.ID);
             }
         }
     }

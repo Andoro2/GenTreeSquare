@@ -1,0 +1,54 @@
+{
+    "Registro": {
+        "Andreu": {
+            "ID": 0,
+            "FirstName": "Andreu",
+            "SecondName": " ",
+            "NickName": "Metxa",
+            "Surname1": "Llàcer",
+            "Surname2": "Cantero",
+            "Sex": "Male",
+	    "BirthDate": {
+           	 "Day": 2,
+           	 "Month": 5,
+          	 "Year": 2001
+	    },
+	    "DeathDate": {
+           	 "Day": null,
+           	 "Month": null,
+          	 "Year": null
+	    },
+            "FatherID": null,
+            "MotherID": null,
+            "SiblingsID": {
+                "SiblingID_1": 1
+            },
+            "ChildrenID": {}
+        },
+        "Carles": {
+            "ID": 1,
+            "FirstName": "Carles",
+            "SecondName": " ",
+            "NickName": "Metxa",
+            "Surname1": "Llàcer",
+            "Surname2": "Cantero",
+            "Sex": "Male",
+	    "BirthDate": {
+           	 "Day": 9,
+           	 "Month": 8,
+          	 "Year": 1993
+	    },
+	    "DeathDate": {
+           	 "Day": null,
+           	 "Month": null,
+          	 "Year": null
+	    },
+            "FatherID": null,
+            "MotherID": null,
+            "SiblingsID": {
+                "SiblingID_1": 1
+            },
+            "ChildrenID": {}
+        }
+    }
+}

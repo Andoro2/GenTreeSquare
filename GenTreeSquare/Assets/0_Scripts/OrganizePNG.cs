@@ -4,19 +4,34 @@ using UnityEngine;
 
 public class OrganizePNG : MonoBehaviour
 {
+    public int ID;
     public Persona Humano;
 
     public TreeCreator TC;
-    public Persona RootPerson;
-    private float currentYPosition;
     // Start is called before the first frame update
+    public void AssignHuman()
+    {
+        foreach (Persona Persona in PeopleList.PeopleRegistry.Registry)
+        {
+            if (Persona.ID == ID)
+            {
+                Humano = Persona;
+            }
+        }
+    }
     void Start()
     {
-        TC = GameObject.FindWithTag("Tree").GetComponent<TreeCreator>();
-        RootPerson = TC.RootPerson.GetComponent<Person>().Humano;
-        currentYPosition = 0f;
+        
 
-        if (RootPerson != Humano)
+
+
+
+
+
+        //TC = GameObject.FindWithTag("Tree").GetComponent<TreeCreator>();
+
+
+        /*if (RootPerson != Humano)
         {
             GetAncestors();
             //GetDescendents();
@@ -29,15 +44,15 @@ public class OrganizePNG : MonoBehaviour
         else
         {
             transform.localPosition = new Vector3(0f, 0f, 0f);
-        }
+        }*/
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //if (RootPerson != TC.RootPerson.GetComponent<Person>().Humano) RootPerson = TC.RootPerson.GetComponent<Person>().Humano;
     }
-
+    /*
     public void GetAncestors()
     {
         //int AncestorCounter = 0;
@@ -74,10 +89,11 @@ public class OrganizePNG : MonoBehaviour
         }
 
         //return AncestorCounter;
-    }
+    }*/
+    /*
     public int GetDescendents(Persona PersonAnalized)
     {
-        int DescendentsCounter = 0;
+        int DescendentsCounter = 0;*/
 
         /*if (Humano.Siblings.Count != 0)
         {
@@ -94,13 +110,13 @@ public class OrganizePNG : MonoBehaviour
         }
         else
         {*/
-            foreach (GameObject Child in PersonAnalized.Children) 
+            /*foreach (GameObject Child in PersonAnalized.Children) 
             {
                 int ChildSDescendent = 1 + GetDescendents(Child.transform.GetComponent<Person>().Humano);
                 DescendentsCounter = Mathf.Max(DescendentsCounter, ChildSDescendent);
             }
 
-            return DescendentsCounter;
+            return DescendentsCounter;*/
         //}
-    }
+    //}
 }

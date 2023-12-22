@@ -279,140 +279,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 16885623}
   m_CullTransparentMesh: 1
---- !u!1001 &19930279
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 701105047}
-    m_Modifications:
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Name
-      value: "1_AndreuLl\xE0cer (12)"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683903113106521862, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_text
-      value: Andreu
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthDay
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.NickName
-      value: Metxa
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthYear
-      value: 2001
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstName
-      value: Andreu
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthMonth
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstSurname
-      value: "Ll\xE0cer"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondSurname
-      value: Cantero
-      objectReference: {fileID: 0}
-    - target: {fileID: 8544095537906473814, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Speed
-      value: 2.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ca0e20b2e10b09d43932b89e2e70e3b3, type: 3}
---- !u!4 &19930280 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 19930279}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &20759719
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,155 +867,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 27658011}
   m_CullTransparentMesh: 1
---- !u!1001 &33358736
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 701105047}
-    m_Modifications:
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Name
-      value: 4_LidiaCantero
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683903113106521862, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_text
-      value: Lidia
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.Father
-      value: 
-      objectReference: {fileID: 1905692334}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.Gender
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.Mother
-      value: 
-      objectReference: {fileID: 583915101}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthDay
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.NickName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthYear
-      value: 1668
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstName
-      value: Lidia
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthMonth
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstSurname
-      value: Cantero
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondSurname
-      value: Climent
-      objectReference: {fileID: 0}
-    - target: {fileID: 8544095537906473814, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Speed
-      value: 2.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ca0e20b2e10b09d43932b89e2e70e3b3, type: 3}
---- !u!4 &33358737 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 33358736}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &33705948
 GameObject:
   m_ObjectHideFlags: 0
@@ -3196,12 +2913,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119268096}
   m_CullTransparentMesh: 1
---- !u!1 &124745857 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 890781556}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &135494201
 GameObject:
   m_ObjectHideFlags: 0
@@ -3559,12 +3270,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143093154}
   m_CullTransparentMesh: 1
---- !u!1 &143949013 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 772665286}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &146696792
 GameObject:
   m_ObjectHideFlags: 0
@@ -4878,12 +4583,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209615717}
   m_CullTransparentMesh: 0
---- !u!1 &215935368 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 530034486}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &219418789
 GameObject:
   m_ObjectHideFlags: 0
@@ -8550,155 +8249,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 375810873}
   m_CullTransparentMesh: 0
---- !u!1001 &386853752
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 701105047}
-    m_Modifications:
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Name
-      value: 6_MerceCantero
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683903113106521862, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_text
-      value: Merce
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.Father
-      value: 
-      objectReference: {fileID: 1905692334}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.Gender
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.Mother
-      value: 
-      objectReference: {fileID: 583915101}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthDay
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.NickName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthYear
-      value: 1966
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstName
-      value: Merce
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthMonth
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstSurname
-      value: Cantero
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondSurname
-      value: Climent
-      objectReference: {fileID: 0}
-    - target: {fileID: 8544095537906473814, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Speed
-      value: 2.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ca0e20b2e10b09d43932b89e2e70e3b3, type: 3}
---- !u!4 &386853753 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 386853752}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &389828448
 GameObject:
   m_ObjectHideFlags: 0
@@ -11686,145 +11236,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522702147}
   m_CullTransparentMesh: 0
---- !u!1001 &530034486
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 701105047}
-    m_Modifications:
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Name
-      value: "11_AmparoLl\xE0cer"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683903113106521862, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_text
-      value: Amparo
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.Gender
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthDay
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.NickName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthYear
-      value: 1924
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstName
-      value: Amparo
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthMonth
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstSurname
-      value: "Ll\xE0cer"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondSurname
-      value: "Ll\xE0cer"
-      objectReference: {fileID: 0}
-    - target: {fileID: 8544095537906473814, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Speed
-      value: 2.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ca0e20b2e10b09d43932b89e2e70e3b3, type: 3}
---- !u!4 &530034487 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 530034486}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &532219122
 GameObject:
   m_ObjectHideFlags: 0
@@ -13200,12 +12611,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 576214836}
   m_CullTransparentMesh: 0
---- !u!1 &583915101 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 802757508}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &588835275
 GameObject:
   m_ObjectHideFlags: 0
@@ -15082,20 +14487,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1432172966}
-  - {fileID: 1429030789}
-  - {fileID: 890781557}
-  - {fileID: 33358737}
-  - {fileID: 1894569767}
-  - {fileID: 386853753}
-  - {fileID: 1446792615}
-  - {fileID: 1953538562}
-  - {fileID: 802757509}
-  - {fileID: 772665287}
-  - {fileID: 530034487}
-  - {fileID: 1627868849}
-  - {fileID: 19930280}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15112,8 +14504,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExistingPeopleShow: []
-  VerticalSeparation: 50
+  PeopleRegistryShow: []
   TC: {fileID: 1214420800}
+  PersonaPreFab: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
+    type: 3}
 --- !u!1 &715508648
 GameObject:
   m_ObjectHideFlags: 0
@@ -16033,140 +15427,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 28}
   m_Pivot: {x: 0.5, y: 1}
---- !u!1001 &772665286
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 701105047}
-    m_Modifications:
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Name
-      value: "10_ArturoLl\xE0cer"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683903113106521862, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_text
-      value: Arturo
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthDay
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.NickName
-      value: Metxa
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthYear
-      value: 1922
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstName
-      value: Arturo
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthMonth
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstSurname
-      value: "Ll\xE0cer"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondSurname
-      value: "Mar\xED"
-      objectReference: {fileID: 0}
-    - target: {fileID: 8544095537906473814, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Speed
-      value: 2.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ca0e20b2e10b09d43932b89e2e70e3b3, type: 3}
---- !u!4 &772665287 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 772665286}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &790126364
 GameObject:
   m_ObjectHideFlags: 0
@@ -16871,145 +16131,6 @@ RectTransform:
   m_AnchoredPosition: {x: 24, y: -24}
   m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &802757508
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 701105047}
-    m_Modifications:
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Name
-      value: 9_MercedesCliment
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683903113106521862, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_text
-      value: Mercedes
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.Gender
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthDay
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.NickName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthYear
-      value: 1933
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstName
-      value: Mercedes
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthMonth
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstSurname
-      value: Climent
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondSurname
-      value: Salvador
-      objectReference: {fileID: 0}
-    - target: {fileID: 8544095537906473814, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Speed
-      value: 2.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ca0e20b2e10b09d43932b89e2e70e3b3, type: 3}
---- !u!4 &802757509 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 802757508}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &809144733
 GameObject:
   m_ObjectHideFlags: 0
@@ -18702,150 +17823,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879532549}
   m_CullTransparentMesh: 0
---- !u!1001 &890781556
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 701105047}
-    m_Modifications:
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Name
-      value: "3_ArturLl\xE0cer"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683903113106521862, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_text
-      value: Artur
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.Father
-      value: 
-      objectReference: {fileID: 143949013}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.Mother
-      value: 
-      objectReference: {fileID: 215935368}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthDay
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.NickName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthYear
-      value: 1664
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstName
-      value: Artur
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthMonth
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstSurname
-      value: "Ll\xE0cer"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondSurname
-      value: "Ll\xE0cer"
-      objectReference: {fileID: 0}
-    - target: {fileID: 8544095537906473814, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Speed
-      value: 2.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ca0e20b2e10b09d43932b89e2e70e3b3, type: 3}
---- !u!4 &890781557 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 890781556}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &905949767
 GameObject:
   m_ObjectHideFlags: 0
@@ -24164,125 +23141,165 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Personas:
   - FirstName: Artur
+    ID: 0
     SecondName: 
     NickName: 
-    FirstSurname: "Ll\xE0cer"
-    SecondSurname: "Ll\xE0cer"
-    Photo: {fileID: 0}
+    Surname1: 
+    Surname2: 
     Gender: 0
-    BirthDay: 17
-    BirthMonth: 3
-    BirthYear: 1664
-    Father: {fileID: 0}
-    Mother: {fileID: 0}
-    Partner: {fileID: 0}
-    Siblings: []
-    Children: []
+    BirthDate:
+      Day: 0
+      Month: 0
+      Year: 0
+    DeathDate:
+      Day: 0
+      Month: 0
+      Year: 0
+    FatherID: 0
+    MotherID: 0
+    PartnerID: 0
+    SiblingsID: 
+    ChildrenID: 
   - FirstName: Lidia
+    ID: 0
     SecondName: 
     NickName: 
-    FirstSurname: Cantero
-    SecondSurname: Climent
-    Photo: {fileID: 0}
+    Surname1: 
+    Surname2: 
     Gender: 1
-    BirthDay: 3
-    BirthMonth: 8
-    BirthYear: 1668
-    Father: {fileID: 0}
-    Mother: {fileID: 0}
-    Partner: {fileID: 0}
-    Siblings: []
-    Children: []
+    BirthDate:
+      Day: 0
+      Month: 0
+      Year: 0
+    DeathDate:
+      Day: 0
+      Month: 0
+      Year: 0
+    FatherID: 0
+    MotherID: 0
+    PartnerID: 0
+    SiblingsID: 
+    ChildrenID: 
   - FirstName: Noe
+    ID: 0
     SecondName: 
     NickName: 
-    FirstSurname: Cantero
-    SecondSurname: Climent
-    Photo: {fileID: 0}
+    Surname1: 
+    Surname2: 
     Gender: 1
-    BirthDay: 9
-    BirthMonth: 6
-    BirthYear: 1975
-    Father: {fileID: 0}
-    Mother: {fileID: 0}
-    Partner: {fileID: 0}
-    Siblings: []
-    Children: []
+    BirthDate:
+      Day: 0
+      Month: 0
+      Year: 0
+    DeathDate:
+      Day: 0
+      Month: 0
+      Year: 0
+    FatherID: 0
+    MotherID: 0
+    PartnerID: 0
+    SiblingsID: 
+    ChildrenID: 
   - FirstName: Merce
+    ID: 0
     SecondName: 
     NickName: 
-    FirstSurname: Cantero
-    SecondSurname: Climent
-    Photo: {fileID: 0}
+    Surname1: 
+    Surname2: 
     Gender: 1
-    BirthDay: 21
-    BirthMonth: 9
-    BirthYear: 1966
-    Father: {fileID: 0}
-    Mother: {fileID: 0}
-    Partner: {fileID: 0}
-    Siblings: []
-    Children: []
+    BirthDate:
+      Day: 0
+      Month: 0
+      Year: 0
+    DeathDate:
+      Day: 0
+      Month: 0
+      Year: 0
+    FatherID: 0
+    MotherID: 0
+    PartnerID: 0
+    SiblingsID: 
+    ChildrenID: 
   - FirstName: Carles
+    ID: 0
     SecondName: 
     NickName: 
-    FirstSurname: "Ll\xE0cer"
-    SecondSurname: Cantero
-    Photo: {fileID: 0}
+    Surname1: 
+    Surname2: 
     Gender: 0
-    BirthDay: 0
-    BirthMonth: 0
-    BirthYear: 0
-    Father: {fileID: 0}
-    Mother: {fileID: 0}
-    Partner: {fileID: 0}
-    Siblings: []
-    Children: []
+    BirthDate:
+      Day: 0
+      Month: 0
+      Year: 0
+    DeathDate:
+      Day: 0
+      Month: 0
+      Year: 0
+    FatherID: 0
+    MotherID: 0
+    PartnerID: 0
+    SiblingsID: 
+    ChildrenID: 
   - FirstName: Vicent
+    ID: 0
     SecondName: 
     NickName: 
-    FirstSurname: Cantero
-    SecondSurname: Caliment
-    Photo: {fileID: 0}
+    Surname1: 
+    Surname2: 
     Gender: 0
-    BirthDay: 8
-    BirthMonth: 6
-    BirthYear: 1972
-    Father: {fileID: 0}
-    Mother: {fileID: 0}
-    Partner: {fileID: 0}
-    Siblings: []
-    Children: []
+    BirthDate:
+      Day: 0
+      Month: 0
+      Year: 0
+    DeathDate:
+      Day: 0
+      Month: 0
+      Year: 0
+    FatherID: 0
+    MotherID: 0
+    PartnerID: 0
+    SiblingsID: 
+    ChildrenID: 
   - FirstName: Vicente
+    ID: 0
     SecondName: 
     NickName: 
-    FirstSurname: Cantero
-    SecondSurname: Salvador
-    Photo: {fileID: 0}
+    Surname1: 
+    Surname2: 
     Gender: 0
-    BirthDay: 22
-    BirthMonth: 11
-    BirthYear: 1933
-    Father: {fileID: 0}
-    Mother: {fileID: 0}
-    Partner: {fileID: 0}
-    Siblings: []
-    Children: []
+    BirthDate:
+      Day: 0
+      Month: 0
+      Year: 0
+    DeathDate:
+      Day: 0
+      Month: 0
+      Year: 0
+    FatherID: 0
+    MotherID: 0
+    PartnerID: 0
+    SiblingsID: 
+    ChildrenID: 
   - FirstName: Mercedes
+    ID: 0
     SecondName: 
     NickName: 
-    FirstSurname: Climent
-    SecondSurname: Salvador
-    Photo: {fileID: 0}
+    Surname1: 
+    Surname2: 
     Gender: 1
-    BirthDay: 20
-    BirthMonth: 1
-    BirthYear: 1933
-    Father: {fileID: 0}
-    Mother: {fileID: 0}
-    Partner: {fileID: 0}
-    Siblings: []
-    Children: []
+    BirthDate:
+      Day: 0
+      Month: 0
+      Year: 0
+    DeathDate:
+      Day: 0
+      Month: 0
+      Year: 0
+    FatherID: 0
+    MotherID: 0
+    PartnerID: 0
+    SiblingsID: 
+    ChildrenID: 
   Persona: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3, type: 3}
   FirstNameInput: {fileID: 244497249}
   SecondNameInput: {fileID: 750002446}
@@ -24298,6 +23315,7 @@ MonoBehaviour:
   - Ninguno
   ExistingPeople: []
   PeopleCounter: 0
+  PeopleRegistry: []
 --- !u!4 &1205839377
 Transform:
   m_ObjectHideFlags: 0
@@ -24564,10 +23582,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3cb9a22803603d4a83a6c251acf4102, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RootPerson: {fileID: 1432172961}
+  RootPersonID: 1
   PersonaPNG: {fileID: 5864170475566024609, guid: ac779179623eafe4c93ef1cbba554ac2,
     type: 3}
-  ExistingPeople: []
   PersonasPNG: []
 --- !u!1 &1225276388
 GameObject:
@@ -25900,12 +24917,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271748154}
   m_CullTransparentMesh: 1
---- !u!1 &1274369793 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 33358736}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1276942391
 GameObject:
   m_ObjectHideFlags: 0
@@ -28503,162 +27514,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 143}
   m_SizeDelta: {x: 255, y: 334}
   m_Pivot: {x: 0, y: 1}
---- !u!1001 &1429030788
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 701105047}
-    m_Modifications:
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Name
-      value: "2_CarlesLl\xE0cer"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683903113106521862, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_text
-      value: Carles
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.Father
-      value: 
-      objectReference: {fileID: 124745857}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.Mother
-      value: 
-      objectReference: {fileID: 1274369793}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthDay
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.NickName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthYear
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstName
-      value: Carles
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthMonth
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstSurname
-      value: "Ll\xE0cer"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondSurname
-      value: Cantero
-      objectReference: {fileID: 0}
-    - target: {fileID: 8544095537906473814, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Speed
-      value: 2.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ca0e20b2e10b09d43932b89e2e70e3b3, type: 3}
---- !u!4 &1429030789 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1429030788}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1432172961 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 5888219032450213456}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1432172966 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 5888219032450213456}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1437246374
 GameObject:
   m_ObjectHideFlags: 0
@@ -29010,150 +27865,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446049367}
   m_CullTransparentMesh: 1
---- !u!1001 &1446792614
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 701105047}
-    m_Modifications:
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Name
-      value: 7_VicentCantero
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683903113106521862, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_text
-      value: Vicent
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.Father
-      value: 
-      objectReference: {fileID: 1905692334}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.Mother
-      value: 
-      objectReference: {fileID: 583915101}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthDay
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.NickName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthYear
-      value: 1972
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstName
-      value: Vicent
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthMonth
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstSurname
-      value: Cantero
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondSurname
-      value: Climent
-      objectReference: {fileID: 0}
-    - target: {fileID: 8544095537906473814, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Speed
-      value: 2.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ca0e20b2e10b09d43932b89e2e70e3b3, type: 3}
---- !u!4 &1446792615 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1446792614}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1455097340
 GameObject:
   m_ObjectHideFlags: 0
@@ -32423,140 +31134,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1366755394384829526, guid: ac779179623eafe4c93ef1cbba554ac2,
     type: 3}
   m_PrefabInstance: {fileID: 1473103473125742417}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1627868848
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 701105047}
-    m_Modifications:
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Name
-      value: "1_AndreuLl\xE0cer (11)"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683903113106521862, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_text
-      value: Andreu
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthDay
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.NickName
-      value: Metxa
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthYear
-      value: 2001
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstName
-      value: Andreu
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthMonth
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstSurname
-      value: "Ll\xE0cer"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondSurname
-      value: Cantero
-      objectReference: {fileID: 0}
-    - target: {fileID: 8544095537906473814, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Speed
-      value: 2.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ca0e20b2e10b09d43932b89e2e70e3b3, type: 3}
---- !u!4 &1627868849 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1627868848}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1640997635
 GameObject:
@@ -36467,155 +35044,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878778300}
   m_CullTransparentMesh: 0
---- !u!1001 &1894569766
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 701105047}
-    m_Modifications:
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Name
-      value: 5_NoeCantero
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683903113106521862, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_text
-      value: Noe
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.Father
-      value: 
-      objectReference: {fileID: 1905692334}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.Gender
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.Mother
-      value: 
-      objectReference: {fileID: 583915101}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthDay
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.NickName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthYear
-      value: 1975
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstName
-      value: Noe
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthMonth
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstSurname
-      value: Cantero
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondSurname
-      value: Climent
-      objectReference: {fileID: 0}
-    - target: {fileID: 8544095537906473814, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Speed
-      value: 2.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ca0e20b2e10b09d43932b89e2e70e3b3, type: 3}
---- !u!4 &1894569767 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1894569766}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1898888932
 GameObject:
   m_ObjectHideFlags: 0
@@ -36877,12 +35305,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904184939}
   m_CullTransparentMesh: 0
---- !u!1 &1905692334 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1953538561}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1908716597
 GameObject:
   m_ObjectHideFlags: 0
@@ -37806,140 +36228,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946865127}
   m_CullTransparentMesh: 1
---- !u!1001 &1953538561
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 701105047}
-    m_Modifications:
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Name
-      value: 8_VicenteCantero
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683903113106521862, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_text
-      value: Vicente
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthDay
-      value: 22
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.NickName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthYear
-      value: 1933
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstName
-      value: Vicente
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthMonth
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstSurname
-      value: Cantero
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondSurname
-      value: Salvador
-      objectReference: {fileID: 0}
-    - target: {fileID: 8544095537906473814, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Speed
-      value: 2.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ca0e20b2e10b09d43932b89e2e70e3b3, type: 3}
---- !u!4 &1953538562 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1953538561}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1964551308
 GameObject:
   m_ObjectHideFlags: 0
@@ -39904,7 +38192,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1205839376}
         m_TargetAssemblyTypeName: CreatePeople, Assembly-CSharp
-        m_MethodName: Create
+        m_MethodName: CreateByInput
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -40165,6 +38453,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1214420797}
     m_Modifications:
+    - target: {fileID: 259111797811099153, guid: ac779179623eafe4c93ef1cbba554ac2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1366755394384829526, guid: ac779179623eafe4c93ef1cbba554ac2,
         type: 3}
       propertyPath: m_Pivot.x
@@ -40290,141 +38583,3 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac779179623eafe4c93ef1cbba554ac2, type: 3}
---- !u!1001 &5888219032450213456
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 701105047}
-    m_Modifications:
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237510162454358723, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Name
-      value: "1_AndreuLl\xE0cer"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7271808872221248958, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683903113106521862, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_text
-      value: Andreu
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.Father
-      value: 
-      objectReference: {fileID: 124745857}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.Mother
-      value: 
-      objectReference: {fileID: 1274369793}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthDay
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.NickName
-      value: Metxa
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthYear
-      value: 2001
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstName
-      value: Andreu
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.BirthMonth
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.FirstSurname
-      value: "Ll\xE0cer"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7739580799320942084, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: Humano.SecondSurname
-      value: Cantero
-      objectReference: {fileID: 0}
-    - target: {fileID: 8544095537906473814, guid: ca0e20b2e10b09d43932b89e2e70e3b3,
-        type: 3}
-      propertyPath: m_Speed
-      value: 2.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ca0e20b2e10b09d43932b89e2e70e3b3, type: 3}
