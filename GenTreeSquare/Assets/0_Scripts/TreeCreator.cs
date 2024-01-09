@@ -5,11 +5,10 @@ using TMPro;
 
 public class TreeCreator : MonoBehaviour
 {
-    //public Persona RootPerson;
     public int RootPersonID;
-    public GameObject PersonaPNG;
-    public List<GameObject> PersonasPNG = new List<GameObject>();
-
+    public GameObject PersonaPNG, ParejaPNG;
+    public List<GameObject> Personas = new List<GameObject>();
+    public float VOffset = 150f;
     private int CounterID = 1;
 
     // Start is called before the first frame update
@@ -23,134 +22,170 @@ public class TreeCreator : MonoBehaviour
     void Update()
     {
         //ExistingPeople = PeopleList.ExistingPeople;
-        PersonasPNG = PeopleList.ExistingPeople;
+        Personas = PeopleList.ExistingPeople;
     }
     private void OnEnable()
     {
-        foreach (GameObject Persona in PersonasPNG)
+        OrganizeUp(FindPerson(RootPersonID));
+    }
+    public void OrganizeUp(Persona FirstPersonData, Persona SecondPersonData = null)
+    {
+        float VOffset = 125f;
+        // Crear a el PNG de la persona individual en caso de no tener asignada una pareja,
+        // mientras que si tiene pareja asignada, creara el PNG combinado
+        if (SecondPersonData == null)
         {
-            //Persona.transform.parent = transform;
-            //Persona.transform.position = new Vector3(0f, 0f, 0f);
-            Debug.Log(Persona.GetComponent<OrganizePNG>().Humano.FirstName + MovementHorizontal(Persona));
-            if (Persona.GetComponent<OrganizePNG>().Humano.ID == RootPersonID)
+            GameObject PersonPNG = Instantiate(PersonaPNG, new Vector3(0f, 0f, 0f), Quaternion.identity);
+
+            OrganizePNG SingleData = PersonPNG.GetComponent<OrganizePNG>();
+            SingleData.Humano = FirstPersonData;
+            SingleData.ID = FirstPersonData.ID;
+
+            GameObject[] PNGs = GameObject.FindGameObjectsWithTag("PersonPNG");
+            foreach (GameObject PNG in PNGs)
             {
-                OrganizeSquare(Persona);
-                Debug.Log(Persona.GetComponent<OrganizePNG>().Humano.FirstName);// + " " + Horizontal(Persona));
+                OrganizePNG PNGData = PNG.GetComponent<OrganizePNG>();
+                if (SingleData.Humano.ChildrenID.Contains(PNGData.ID))
+                {
+                    PersonPNG.transform.parent = PNG.transform;
+                }
             }
+
+            PersonPNG.transform.SetParent(transform);
+            if(FirstPersonData.ID != RootPersonID) PersonPNG.transform.localPosition = new Vector3(60f, VOffset, 0f);
+            else PersonPNG.transform.localPosition = new Vector3(0f, 0f, 0f);
+        }
+        else
+        {
+            Vector3 PairPosition = new Vector3(0f, 0f, 0f);
+            if (FirstPersonData.ID != FindPerson(RootPersonID).FatherID && FirstPersonData.ID != FindPerson(RootPersonID).MotherID &&
+                SecondPersonData.ID != FindPerson(RootPersonID).FatherID && SecondPersonData.ID != FindPerson(RootPersonID).MotherID)
+            { // Si no eres el pare o mare de la RootPerson
+                int HOffset = 0;
+                if (FindPerson(FirstPersonData.ChildrenID[0]).Gender == Genders.Male)
+                {
+                    HOffset = -60 - 120 * (CountAncestors(FindPerson(SecondPersonData.ID)));
+                }
+                else if (FindPerson(FirstPersonData.ChildrenID[0]).Gender == Genders.Female)
+                {
+                    HOffset = 60 + 120 * (CountAncestors(FindPerson(FirstPersonData.ID)));
+                }
+
+
+                PairPosition = new Vector3(HOffset, VOffset, 0f);
+            }
+            else
+            {
+                PairPosition = new Vector3(0f, VOffset, 0f);
+            }
+            GameObject PairPNG = Instantiate(ParejaPNG, PairPosition, Quaternion.identity);
+            PairPNG.transform.localPosition = PairPosition;
+            
+            PairPNG.transform.name = FirstPersonData.FirstName + "&" + SecondPersonData.FirstName;
+
+            OrganizePNG MaleData = PairPNG.transform.Find("MalePNG").GetComponent<OrganizePNG>();
+            OrganizePNG FemaleData = PairPNG.transform.Find("FemalePNG").GetComponent<OrganizePNG>();
+            if (FirstPersonData.Gender == Genders.Male)
+            {
+                MaleData.Humano = FirstPersonData;
+                MaleData.ID = FirstPersonData.ID;
+
+                FemaleData.Humano = SecondPersonData;
+                FemaleData.ID = SecondPersonData.ID;
+            }
+            else if (FirstPersonData.Gender == Genders.Female)
+            {
+                FemaleData.Humano = FirstPersonData;
+                FemaleData.ID = FirstPersonData.ID;
+
+                MaleData.Humano = SecondPersonData;
+                MaleData.ID = SecondPersonData.ID;
+            }
+
+            GameObject[] PNGs = GameObject.FindGameObjectsWithTag("PersonPNG");
+            foreach (GameObject PNG in PNGs)
+            {
+                OrganizePNG PNGData = PNG.GetComponent<OrganizePNG>();
+                if (MaleData.Humano.ChildrenID.Contains(PNGData.ID) && FemaleData.Humano.ChildrenID.Contains(PNGData.ID))
+                {
+                    PairPNG.transform.SetParent(PNG.transform);
+                    PairPNG.transform.localPosition = PairPosition;
+                }
+            }
+        }
+        //----------------------------------------//
+
+        CreateParents(FirstPersonData);
+        /*Debug.Log(FirstPersonData.ID + "_" + FirstPersonData.FirstName + FirstPersonData.Surname1 +
+            " - Total: " + CountAncestors(FirstPersonData));*/
+        
+        CreateParents(SecondPersonData);
+        /*Debug.Log(SecondPersonData.ID + "_" + SecondPersonData.FirstName + SecondPersonData.Surname1 +
+                " - Total: " + CountAncestors(SecondPersonData));*/
+    }
+    void CreateSiblings(Persona Person)
+    {
+        if(Person.SiblingsID.Count > 0)
+        {
+
         }
     }
-    /*private void OnDisable()
+    int CountDescendants(Persona Person)
     {
-        foreach (GameObject Persona in PersonasPNG)
+        int TotalDescendants = 0;
+
+        if (Person.ChildrenID.Count > 0)
         {
-            if (Persona != null)
+            TotalDescendants += Person.ChildrenID.Count;
+            foreach (int ChildID in Person.ChildrenID)
             {
-                Destroy(Persona);
+                TotalDescendants += CountDescendants(FindPerson(ChildID));
             }
         }
-    }*/
-    public void CreatePersonPNG(GameObject Persona)
-    {
-        GameObject PersonPNG = Instantiate(PersonaPNG, new Vector3(0f, 0f, 0f), Quaternion.identity);
-        PersonPNG.GetComponent<OrganizePNG>().ID = Persona.GetComponent<Person>().Humano.ID;
-        PersonPNG.GetComponent<OrganizePNG>().AssignHuman();
 
-
-        Persona PersonData = Persona.GetComponent<Person>().Humano;
-
-        //PersonPNG.GetComponent<OrganizePNG>().Humano = PersonData;
-        PersonPNG.GetComponent<OrganizePNG>().TC = GetComponent<TreeCreator>();
-        //PersonPNG.GetComponent<OrganizePNG>().RootPerson = GetComponent<TreeCreator>().RootPerson.GetComponent<Person>().Humano;
-        PersonPNG.transform.parent = transform;
-
-
-        PersonPNG.transform.Find("Data").Find("Name").gameObject.transform.GetComponent<TextMeshProUGUI>().text = PersonData.FirstName + PersonData.SecondName;
-        PersonPNG.transform.Find("Data").Find("Surnames").gameObject.transform.GetComponent<TextMeshProUGUI>().text = PersonData.Surname1 + " " + PersonData.Surname2;
-
-        PersonPNG.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-        PersonPNG.transform.localPosition = new Vector3(0f, 0f, 0f);
-
-        PersonasPNG.Add(PersonPNG);
-        //PersonaPNG.transform.localPosition = TreeOrganize(Persona);
-
-        PersonPNG.name = PersonData.ID + "_" + PersonData.FirstName + PersonData.Surname1;
+        return TotalDescendants;
     }
-    public void OrganizeSquare(GameObject Persona) //Persona en PNG
+    void CreateParents(Persona Child)
     {
-        float Horizontal = 25f,
-            Vertical = 75f;
-        Persona PersonData = Persona.GetComponent<OrganizePNG>().Humano;
-
-        if (PersonData.FatherID != 0) //Considera al pare com a monigote
+        if (Child.FatherID != 0 && Child.MotherID != 0) // Si té pare i mare
         {
-            foreach (GameObject HumanPNG in PersonasPNG)
-            {
-                if (PersonData.FatherID == HumanPNG.GetComponent<OrganizePNG>().Humano.ID) //Conseguixc al pare en PNG
-                {
-                    HumanPNG.transform.parent = Persona.transform;
-                    /*if(MovementHorizontal(Persona) >= 1)
-                    {
-                        HumanPNG.transform.position = new Vector3(Persona.transform.position.x - Horizontal * MovementHorizontal(Persona),
-                            Persona.transform.position.y + (Vertical), 0f);
-                    }
-                    else
-                    {*/
-                        HumanPNG.transform.position = new Vector3(Persona.transform.position.x - Horizontal * MovementHorizontal(Persona),
-                            Persona.transform.position.y + (Vertical), 0f);
-                    //}
-                    OrganizeSquare(HumanPNG);
-                }
-            }
+            OrganizeUp(FindPerson(Child.FatherID), FindPerson(Child.MotherID));
         }
-        if (PersonData.MotherID != 0) //Considera a la mare com a monigote
+        else if (Child.FatherID != 0 && Child.MotherID == 0) // Sols té pare
         {
-            foreach (GameObject HumanPNG in PersonasPNG)
-            {
-                if (PersonData.MotherID == HumanPNG.GetComponent<OrganizePNG>().Humano.ID) //Conseguixc a la mare en PNG
-                {
-                    HumanPNG.transform.parent = Persona.transform;
-                    /*if (MovementHorizontal(Persona) >= 1)
-                    {
-                        HumanPNG.transform.position = new Vector3(Persona.transform.position.x + Horizontal * MovementHorizontal(Persona),
-                            Persona.transform.position.y + (Vertical), 0f);
-                    }
-                    else
-                    {*/
-                        HumanPNG.transform.position = new Vector3(Persona.transform.position.x + Horizontal * MovementHorizontal(Persona),
-                            Persona.transform.position.y + (Vertical), 0f);
-                    //}
-                    OrganizeSquare(HumanPNG);
-                }
-            }
+            OrganizeUp(FindPerson(Child.FatherID), null);
+        }
+        else if (Child.FatherID == 0 && Child.MotherID != 0) // Sols té mare
+        {
+            OrganizeUp(FindPerson(Child.MotherID), null);
         }
     }
-    public int MovementHorizontal(GameObject Human)
+    int CountAncestors(Persona Person)
     {
-        int HMovement = 1;
-        Persona PersonData = Human.GetComponent<OrganizePNG>().Humano;
-        if(PersonData.Gender == Genders.Male && PersonData.MotherID != null)
-        {
-            foreach (GameObject HumanPNG in PersonasPNG)
-            {
-                if (PersonData.MotherID == HumanPNG.GetComponent<OrganizePNG>().Humano.ID)
-                {
-                    return HMovement * 2 * MovementHorizontal(HumanPNG);
-                    //return "_" + HumanPNG.GetComponent<OrganizePNG>().Humano.FirstName + Horizontal(HumanPNG);
-                }
-            }
-        }
-        else if (PersonData.Gender == Genders.Female && PersonData.FatherID != null)
-        {
-            foreach (GameObject HumanPNG in PersonasPNG)
-            {
-                if (PersonData.FatherID == HumanPNG.GetComponent<OrganizePNG>().Humano.ID)
-                {
+        int TotalAncestors = 0;
 
-                    return HMovement * 2 * MovementHorizontal(HumanPNG);
-                    //return "_" + HumanPNG.GetComponent<OrganizePNG>().Humano.FirstName + Horizontal(HumanPNG);
-                }
+        if (Person.FatherID != 0)
+        {
+            TotalAncestors += CountAncestors(FindPerson(Person.FatherID));
+        }
+        if (Person.MotherID != 0)
+        {
+            TotalAncestors += CountAncestors(FindPerson(Person.MotherID));
+        }
+
+        if (Person.FatherID != 0 && Person.MotherID != 0) TotalAncestors++;
+
+        return TotalAncestors;
+    }
+    Persona FindPerson(int ID)
+    {
+        foreach (Persona Person in PeopleList.PeopleRegistry.Registry)
+        {
+            if (Person.ID == ID)
+            {
+                return Person;
             }
         }
-        return 1;
+        return null;
     }
 }

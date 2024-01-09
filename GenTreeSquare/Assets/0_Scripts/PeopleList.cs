@@ -51,8 +51,6 @@ public class PeopleList : MonoBehaviour
             {
                 ExistingPeople.Add(NewPerson);
 
-                TC.CreatePersonPNG(NewPerson);
-
                 PeopleRegistry.Registry.Add(NewPerson.GetComponent<Person>().Humano);
                 SaveToJSON();
             }
@@ -135,7 +133,7 @@ public class PeopleList : MonoBehaviour
     public GameObject PersonaPreFab;
     public void CreatePersonFromJSON(Persona Humano)
     {
-        GameObject Penya = Instantiate(PersonaPreFab, new Vector3(0f, 0f, 0.5f), Quaternion.identity);
+        GameObject Penya = Instantiate(PersonaPreFab, new Vector3(0f, 0.5f, 0f), Quaternion.identity);
         Penya.transform.Find("Canvas").Find("NameTMP").GetComponent<TextMeshProUGUI>().text = Humano.FirstName;
         Penya.transform.parent = GameObject.FindWithTag("PeopleManager").gameObject.transform;
 
@@ -155,7 +153,7 @@ public class PeopleList : MonoBehaviour
 
         ExistingPeople.Add(Penya);
 
-        TC.CreatePersonPNG(Penya);
+        //TC.CreatePersonPNG(Penya);
 
         PeopleRegistry.Registry.Add(Penya.GetComponent<Person>().Humano);
     }

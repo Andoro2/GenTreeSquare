@@ -12,16 +12,16 @@ public class OrganizePople : MonoBehaviour
         int i = 0;
         Array.Sort(PersonasArray, (persona1, persona2) => string.Compare(persona1.GetComponent<Person>().Humano.Surname1, persona2.GetComponent<Person>().Humano.Surname1, StringComparison.Ordinal));
         
-        foreach (GameObject persona in PersonasArray)
+        foreach (GameObject Persona in PersonasArray)
         {
             float x = (i % 5 - 2) * 3f;
             float z = Mathf.Floor(i / 5) * 3f;
 
-            persona.transform.position = new Vector3(x, 0.2f, z);
+            Persona.transform.position = new Vector3(x, 0.2f, z);
             i++;
 
-            persona.transform.rotation = new Quaternion(0f, 180f, 0f, 1f);
-            persona.GetComponent<RandomMovement>().Stop();
+            Persona.transform.rotation = new Quaternion(0f, 180f, 0f, 1f);
+            Persona.GetComponent<RandomMovement>().Stop();
         }
     }
 }
