@@ -47,35 +47,32 @@ public class CreatePeople : MonoBehaviour
                     ExistingPeople.Add(persona);
                 }
             }
-            AddToDropdown(FatherDropdown);
-            AddToDropdown(MotherDropdown);
-            AddToDropdown(PartnerDropdown);
+            AddToDropdown(FatherDropdown, 0);
+            AddToDropdown(MotherDropdown, 1);
+            AddToDropdown(PartnerDropdown, 3);
 
             PeopleCounter = ExistingPeople.Count;
         }
     }
-    public void AddToDropdown(TMP_Dropdown PeopleDropdown)
+    public void AddToDropdown(TMP_Dropdown PeopleDropdown, int Gender)
     {
+        People.Clear();
+        People.Add("Ninguno");
         for (int i = 0; i < ExistingPeople.Count; i++)
         {
-            if (!People.Contains(ExistingPeople[i].GetComponent<Person>().Humano.FirstName))
-            {
-                People.Add(ExistingPeople[i].GetComponent<Person>().Humano.FirstName);
-            }
+            People.Add(ExistingPeople[i].GetComponent<Person>().Humano.FirstName
+                + ExistingPeople[i].GetComponent<Person>().Humano.SecondName
+                + ExistingPeople[i].GetComponent<Person>().Humano.Surname1);
         }
         PeopleDropdown.ClearOptions();
         PeopleDropdown.AddOptions(People);
-    }
-    public void AssignData()
-    {
-
     }
     public void CreateByInput()
     {
         if (FirstNameInput.text != "" && FirstSurnameInput.text != ""
             && ((FatherDropdown.value == 0 || MotherDropdown.value == 0) || FatherDropdown.value != MotherDropdown.value))
         {
-            GameObject Penya = Instantiate(Persona, new Vector3(0f, 0f, 0.5f), Quaternion.identity);
+            GameObject Penya = Instantiate(Persona, RandomVector3.GenerateRandomV3(), Quaternion.identity);
             Penya.transform.Find("Canvas").Find("NameTMP").GetComponent<TextMeshProUGUI>().text = FirstNameInput.text;
             Penya.transform.parent = GameObject.FindWithTag("PeopleManager").gameObject.transform;
 
@@ -127,9 +124,15 @@ public class CreatePeople : MonoBehaviour
                         break;
                 }
 
-            if (FatherDropdown.value != 0) PersonData.FatherID = ExistingPeople[FatherDropdown.value - 1].gameObject.GetComponent<Person>().Humano.ID;
-            if (MotherDropdown.value != 0) PersonData.MotherID = ExistingPeople[MotherDropdown.value - 1].gameObject.GetComponent<Person>().Humano.ID;
-            if (PartnerDropdown.value != 0) PersonData.PartnerID = ExistingPeople[PartnerDropdown.value - 1].gameObject.GetComponent<Person>().Humano.ID;
+            if (FatherDropdown.value != 0) PersonData.FatherID = ExistingPeople[FatherDropdown.value - 1].GetComponent<Person>().Humano.ID;
+            if (MotherDropdown.value != 0) PersonData.MotherID = ExistingPeople[MotherDropdown.value - 1].GetComponent<Person>().Humano.ID;
+            if (PartnerDropdown.value != 0)
+            {
+                PersonData.PartnerID = PeopleList.PeopleRegistry.Registry[PartnerDropdown.value - 1].ID;
+                TreeCreator.FindPerson(PeopleList.PeopleRegistry.Registry[PartnerDropdown.value - 1].ID).PartnerID = PersonData.ID;
+                //PersonData.PartnerID = ExistingPeople[PartnerDropdown.value - 1].GetComponent<Person>().Humano.ID;
+                //ExistingPeople[PartnerDropdown.value - 1].GetComponent<Person>().Humano.PartnerID = PersonData.ID;
+            }
 
             ExistingPeople.Add(Penya);
             PeopleRegistry.Add(PersonData);
@@ -150,7 +153,7 @@ public class CreatePeople : MonoBehaviour
     {
         if ((CounterID - 1) != Personas.Count)
         {
-            GameObject Penya = Instantiate(Persona, new Vector3(0f, 0f, 0.5f), Quaternion.identity);
+            GameObject Penya = Instantiate(Persona, RandomVector3.GenerateRandomV3(), Quaternion.identity);
             Penya.transform.Find("Canvas").Find("NameTMP").GetComponent<TextMeshProUGUI>().text = Personas[CounterID - 1].FirstName;
             Penya.transform.parent = GameObject.FindWithTag("PeopleManager").gameObject.transform;
 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Linq;
 
 public class TreeCreator : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class TreeCreator : MonoBehaviour
     public List<GameObject> Personas = new List<GameObject>();
     public float VOffset = 150f;
     private int CounterID = 1;
+    private GameObject RootPersonPNG;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +28,13 @@ public class TreeCreator : MonoBehaviour
     }
     private void OnEnable()
     {
+        Personas = PeopleList.ExistingPeople;
+        if (RootPersonPNG != null) Destroy(RootPersonPNG);
         OrganizeUp(FindPerson(RootPersonID));
+    }
+    private void OnDisable()
+    {
+        if (RootPersonPNG != null) Destroy(RootPersonPNG);
     }
     public void OrganizeUp(Persona FirstPersonData, Persona SecondPersonData = null)
     {
@@ -47,13 +55,15 @@ public class TreeCreator : MonoBehaviour
                 OrganizePNG PNGData = PNG.GetComponent<OrganizePNG>();
                 if (SingleData.Humano.ChildrenID.Contains(PNGData.ID))
                 {
-                    PersonPNG.transform.parent = PNG.transform;
+                    PersonPNG.transform.SetParent(PNG.transform);
                 }
             }
 
             PersonPNG.transform.SetParent(transform);
             if(FirstPersonData.ID != RootPersonID) PersonPNG.transform.localPosition = new Vector3(60f, VOffset, 0f);
             else PersonPNG.transform.localPosition = new Vector3(0f, 0f, 0f);
+
+            if (FirstPersonData == FindPerson(RootPersonID)) RootPersonPNG = PersonPNG;
         }
         else
         {
@@ -71,63 +81,251 @@ public class TreeCreator : MonoBehaviour
                     HOffset = 60 + 120 * (CountAncestors(FindPerson(FirstPersonData.ID)));
                 }
 
-
                 PairPosition = new Vector3(HOffset, VOffset, 0f);
             }
             else
             {
                 PairPosition = new Vector3(0f, VOffset, 0f);
+                CreateSiblings(FirstPersonData);
+                CreateSiblings(SecondPersonData);
             }
             GameObject PairPNG = Instantiate(ParejaPNG, PairPosition, Quaternion.identity);
-            PairPNG.transform.localPosition = PairPosition;
             
             PairPNG.transform.name = FirstPersonData.FirstName + "&" + SecondPersonData.FirstName;
 
-            OrganizePNG MaleData = PairPNG.transform.Find("MalePNG").GetComponent<OrganizePNG>();
-            OrganizePNG FemaleData = PairPNG.transform.Find("FemalePNG").GetComponent<OrganizePNG>();
+            OrganizePNG LeftPData = PairPNG.transform.Find("LeftPPNG").GetComponent<OrganizePNG>();
+            OrganizePNG RightPData = PairPNG.transform.Find("RightPPNG").GetComponent<OrganizePNG>();
+
             if (FirstPersonData.Gender == Genders.Male)
             {
-                MaleData.Humano = FirstPersonData;
-                MaleData.ID = FirstPersonData.ID;
+                LeftPData.Humano = FirstPersonData;
+                LeftPData.ID = FirstPersonData.ID;
 
-                FemaleData.Humano = SecondPersonData;
-                FemaleData.ID = SecondPersonData.ID;
+                RightPData.Humano = SecondPersonData;
+                RightPData.ID = SecondPersonData.ID;
             }
             else if (FirstPersonData.Gender == Genders.Female)
             {
-                FemaleData.Humano = FirstPersonData;
-                FemaleData.ID = FirstPersonData.ID;
+                RightPData.Humano = FirstPersonData;
+                RightPData.ID = FirstPersonData.ID;
 
-                MaleData.Humano = SecondPersonData;
-                MaleData.ID = SecondPersonData.ID;
+                LeftPData.Humano = SecondPersonData;
+                LeftPData.ID = SecondPersonData.ID;
             }
 
             GameObject[] PNGs = GameObject.FindGameObjectsWithTag("PersonPNG");
             foreach (GameObject PNG in PNGs)
             {
                 OrganizePNG PNGData = PNG.GetComponent<OrganizePNG>();
-                if (MaleData.Humano.ChildrenID.Contains(PNGData.ID) && FemaleData.Humano.ChildrenID.Contains(PNGData.ID))
+                if (LeftPData.Humano.ChildrenID.Contains(PNGData.ID) && RightPData.Humano.ChildrenID.Contains(PNGData.ID))
                 {
                     PairPNG.transform.SetParent(PNG.transform);
                     PairPNG.transform.localPosition = PairPosition;
                 }
             }
+
+            if (FirstPersonData == FindPerson(RootPersonID)) RootPersonPNG = PairPNG;
         }
+
         //----------------------------------------//
 
         CreateParents(FirstPersonData);
         /*Debug.Log(FirstPersonData.ID + "_" + FirstPersonData.FirstName + FirstPersonData.Surname1 +
             " - Total: " + CountAncestors(FirstPersonData));*/
-        
-        CreateParents(SecondPersonData);
-        /*Debug.Log(SecondPersonData.ID + "_" + SecondPersonData.FirstName + SecondPersonData.Surname1 +
-                " - Total: " + CountAncestors(SecondPersonData));*/
+
+        if (SecondPersonData != null)
+        {
+            CreateParents(SecondPersonData);
+            /*Debug.Log(SecondPersonData.ID + "_" + SecondPersonData.FirstName + SecondPersonData.Surname1 +
+                    " - Total: " + CountAncestors(SecondPersonData));*/
+
+            if (FirstPersonData.ID == FindPerson(RootPersonID).FatherID || FirstPersonData.ID == FindPerson(RootPersonID).MotherID &&
+                SecondPersonData.ID == FindPerson(RootPersonID).FatherID || SecondPersonData.ID == FindPerson(RootPersonID).MotherID)
+            {
+                CreateSiblings(FirstPersonData);
+                CreateSiblings(SecondPersonData);
+            }
+        }
+
+        if (FirstPersonData.ID == RootPersonID) CreateSiblings(FirstPersonData);
     }
     void CreateSiblings(Persona Person)
     {
-        if(Person.SiblingsID.Count > 0)
+        if (Person.SiblingsID.Count > 0)
         {
+            List<Persona> SiblingsList = new List<Persona>();
+            foreach (int SiblingID in Person.SiblingsID)
+            {
+                SiblingsList.Add(FindPerson(SiblingID));
+            }
 
+            var SiblingsOrdered = SiblingsList
+                .OrderBy(p => p.BirthDate.Year)
+                .ThenBy(p => p.BirthDate.Month)
+                .ThenBy(p => p.BirthDate.Day)
+                .ThenBy(p => p.FirstName)
+                .ToList();
+
+            float HOffset = 0f;
+            GameObject[] PNGs = GameObject.FindGameObjectsWithTag("PersonPNG");
+
+            bool PrevSiblingPair = false;
+
+            foreach (Persona Sibling in SiblingsOrdered)
+            {
+                foreach (GameObject PNG in PNGs)
+                {
+                    OrganizePNG PNGData = PNG.GetComponent<OrganizePNG>();
+                    if (PNGData.ID == Person.ID)
+                    {
+                        int ChildrenIndex = PNG.gameObject.transform.GetSiblingIndex(); // Índice del familiar parent
+                        if (Person.ID == RootPersonID)
+                        {
+                            SiblingsList.Add(FindPerson(RootPersonID));
+                            SiblingsOrdered = SiblingsList
+                                .OrderBy(p => p.BirthDate.Year)
+                                .ThenBy(p => p.BirthDate.Month)
+                                .ThenBy(p => p.BirthDate.Day)
+                                .ThenBy(p => p.FirstName)
+                                .ToList();
+
+                            if (FindPerson(RootPersonID).PartnerID == 0)
+                            {
+                                HOffset += (SiblingsOrdered.IndexOf(Sibling) < SiblingsOrdered.IndexOf(FindPerson(RootPersonID))) ? -120f : 120f;
+                            }
+                            else
+                            {
+                                HOffset += (SiblingsOrdered.IndexOf(Sibling) > SiblingsOrdered.IndexOf(FindPerson(RootPersonID))) ? -240f : 240f;
+                            }
+                        }
+                        else
+                        {
+                            if (Sibling.PartnerID != 0) // Si tiene pareja
+                            {
+                                if (SiblingsOrdered.IndexOf(Sibling) == 0) // Primer hermano
+                                {
+                                    HOffset += (ChildrenIndex == 1) ? -180f :
+                                    (ChildrenIndex == 2 && Person.ID != RootPersonID) ? 180f : 0f;
+                                }
+                                else
+                                {
+                                    if (ChildrenIndex == 1)
+                                    {
+                                        HOffset += PrevSiblingPair ? -240f : -180;
+                                    }
+                                    else if (ChildrenIndex == 2)
+                                    {
+                                        HOffset += PrevSiblingPair ? 240f : 180;
+                                    }
+                                }
+                                PrevSiblingPair = true;
+                            }
+                            else if (Sibling.PartnerID == 0) // Si no tiene pareja
+                            {
+                                if (SiblingsOrdered.IndexOf(Sibling) == 0) // Primer hermano
+                                {
+                                    HOffset += (ChildrenIndex == 1) ? -120f :
+                                    (ChildrenIndex == 2 && Person.ID != RootPersonID) ? 120f : 0f;
+                                }
+                                else
+                                {
+                                    if (ChildrenIndex == 1)
+                                    {
+                                        HOffset += PrevSiblingPair ? -180f : -120;
+                                    }
+                                    else if (ChildrenIndex == 2)
+                                    {
+                                        HOffset += PrevSiblingPair ? 180f : 120;
+                                    }
+                                }
+                                PrevSiblingPair = false;
+                            }
+                        }
+                    }
+                }
+
+                //----CREAR EL OBJETO PAREJA O PERSONA----//
+
+                if (Sibling.PartnerID == 0) // Hermano/a soltero
+                {
+                    Vector3 SiblingPosition = new Vector3(HOffset, 0f, 0f);
+
+                    GameObject SiblingSinglePNG = Instantiate(PersonaPNG, SiblingPosition, Quaternion.identity);
+                    OrganizePNG SiblingData = SiblingSinglePNG.GetComponent<OrganizePNG>();
+
+                    SiblingData.Humano = Sibling;
+                    SiblingData.ID = Sibling.ID;
+
+                    SiblingSinglePNG.transform.name = Sibling.FirstName;
+
+                    foreach (GameObject PNG in PNGs)
+                    {
+                        OrganizePNG PNGData = PNG.GetComponent<OrganizePNG>();
+                        if (PNGData.ID == Person.ID)
+                        {
+                            SiblingSinglePNG.transform.SetParent(PNG.transform);
+                            SiblingSinglePNG.transform.localPosition = SiblingPosition;
+                        }
+                    }
+                }
+                else // Hermano en pareja
+                {
+                    Vector3 SiblingPosition = new Vector3(HOffset, 0f, 0f);
+
+                    GameObject SiblingPairPNG = Instantiate(ParejaPNG, SiblingPosition, Quaternion.identity);
+
+                    SiblingPairPNG.transform.name = Sibling.FirstName + "&" + FindPerson(Sibling.PartnerID).FirstName;
+
+                    OrganizePNG LeftPData = SiblingPairPNG.transform.Find("LeftPPNG").GetComponent<OrganizePNG>();
+                    OrganizePNG RightPData = SiblingPairPNG.transform.Find("RightPPNG").GetComponent<OrganizePNG>();
+
+                    if(Sibling.Gender != Genders.Other && FindPerson(Sibling.PartnerID).Gender != Genders.Other) // Si ninguno de los dos son género comodín
+                    {
+                        if (Sibling.Gender == Genders.Male)
+                        {
+                            LeftPData.Humano = Sibling;
+                            RightPData.Humano = FindPerson(Sibling.PartnerID);
+                        }
+                        else
+                        {
+                            LeftPData.Humano = FindPerson(Sibling.PartnerID);
+                            RightPData.Humano = Sibling;
+                        }
+                    }
+                    else // Si alguno es género comodín
+                    {
+                        if(Sibling.Gender == Genders.Other && FindPerson(Sibling.PartnerID).Gender != Genders.Other
+                            || Sibling.Gender != Genders.Other && FindPerson(Sibling.PartnerID).Gender == Genders.Other) // Si solo hay un género comodín
+                        {
+                            if (Sibling.Gender == Genders.Male)
+                            {
+                                LeftPData.Humano = Sibling;
+                                RightPData.Humano = FindPerson(Sibling.PartnerID);
+                            }
+                            else if (Sibling.Gender == Genders.Female)
+                            {
+                                LeftPData.Humano = FindPerson(Sibling.PartnerID);
+                                RightPData.Humano = Sibling;
+                            }
+                        }
+                        else // Ambos son género comodín
+                        {
+                            LeftPData.Humano = Sibling; // El famliar a la izquierda
+                            RightPData.Humano = FindPerson(Sibling.PartnerID); // La pareja a la derecha
+                        }
+                    }
+
+                    foreach (GameObject PNG in PNGs)
+                    {
+                        OrganizePNG PNGData = PNG.GetComponent<OrganizePNG>();
+                        if (PNGData.ID == Person.ID)
+                        {
+                            SiblingPairPNG.transform.SetParent(PNG.transform);
+                            SiblingPairPNG.transform.localPosition = SiblingPosition;
+                        }
+                    }
+                }
+            }
         }
     }
     int CountDescendants(Persona Person)
@@ -177,7 +375,7 @@ public class TreeCreator : MonoBehaviour
 
         return TotalAncestors;
     }
-    Persona FindPerson(int ID)
+    static public Persona FindPerson(int ID)
     {
         foreach (Persona Person in PeopleList.PeopleRegistry.Registry)
         {
@@ -187,5 +385,17 @@ public class TreeCreator : MonoBehaviour
             }
         }
         return null;
+    }
+}
+public static class RandomVector3
+{
+    public static Vector3 GenerateRandomV3()
+    {
+        float rangoX = 15f, rangoZ = 15f;
+        float x = Random.Range(-rangoX, rangoX);
+        float y = 2.5f;
+        float z = Random.Range(-rangoZ, rangoZ);
+
+        return new Vector3(x, y, z);
     }
 }

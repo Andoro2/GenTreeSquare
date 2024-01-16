@@ -256,14 +256,12 @@ PrefabInstance:
     - target: {fileID: 5591628461664739234, guid: ac779179623eafe4c93ef1cbba554ac2,
         type: 3}
       propertyPath: m_text
-      value: 'FemaleName
-
-'
+      value: Right P Name
       objectReference: {fileID: 0}
     - target: {fileID: 5864170475566024609, guid: ac779179623eafe4c93ef1cbba554ac2,
         type: 3}
       propertyPath: m_Name
-      value: FemalePNG
+      value: RightPPNG
       objectReference: {fileID: 0}
     - target: {fileID: 5864170475566024609, guid: ac779179623eafe4c93ef1cbba554ac2,
         type: 3}
@@ -422,14 +420,14 @@ PrefabInstance:
     - target: {fileID: 5591628461664739234, guid: ac779179623eafe4c93ef1cbba554ac2,
         type: 3}
       propertyPath: m_text
-      value: 'MaleName
+      value: 'Left P Name
 
 '
       objectReference: {fileID: 0}
     - target: {fileID: 5864170475566024609, guid: ac779179623eafe4c93ef1cbba554ac2,
         type: 3}
       propertyPath: m_Name
-      value: MalePNG
+      value: LeftPPNG
       objectReference: {fileID: 0}
     - target: {fileID: 5864170475566024609, guid: ac779179623eafe4c93ef1cbba554ac2,
         type: 3}

@@ -54,7 +54,6 @@ public class RandomMovement : MonoBehaviour
                 }
         }
     }
-
     void Update()
     {
         if (actionTimer > 0f)
@@ -91,7 +90,6 @@ public class RandomMovement : MonoBehaviour
             if (m_Anim != null) m_Anim.SetBool("Walking", false);
         }
     }
-
     void Walk()
     {
         if (m_Anim != null) m_Anim.SetBool("Walking", true);
@@ -99,13 +97,11 @@ public class RandomMovement : MonoBehaviour
         Vector3 movement = transform.forward * m_Speed * Time.deltaTime;
         transform.Translate(movement, Space.World);
     }
-
     void ChangeDirection()
     {
         float randomRotation = Random.Range(-m_RotRange, m_RotRange);
         transform.Rotate(Vector3.up, randomRotation);
     }
-
     void StartWalking()
     {
         CharState = m_States.Walking;
