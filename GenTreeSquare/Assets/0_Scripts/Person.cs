@@ -22,12 +22,6 @@ public class Person : MonoBehaviour
         GetSiblings(People);
         GetChildren(People);
         PeopleCount = People.Length;
-        /*if (PeopleCount != People.Length)
-        {
-            GetSiblings(People);
-            GetChildren(People);
-            PeopleCount = People.Length;
-        }*/
     }
     private void GetSiblings(GameObject[] People)
     {

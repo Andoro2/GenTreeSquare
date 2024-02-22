@@ -5,24 +5,24 @@ using TMPro;
 
 public class OrganizePNG : MonoBehaviour
 {
-    public int ID;
+    //public int ID;
     public Persona Humano;
 
     public TreeCreator TC;
 
     public void AssignHuman()
     {
-        foreach (Persona Persona in PeopleList.PeopleRegistry.Registry)
+        /*foreach (Persona Persona in PeopleList.PeopleRegistry.Registry)
         {
             if (Persona.ID == ID)
             {
                 Humano = Persona;
             }
-        }
+        }*/
     }
     void Start()
     {
-        transform.name = ID + "_" + Humano.FirstName + Humano.Surname1;
+        transform.name = Humano.ID + "_" + Humano.FirstName + Humano.Surname1;
 
         transform.Find("Data").transform
                  .Find("Name").transform
@@ -35,6 +35,6 @@ public class OrganizePNG : MonoBehaviour
     }
     public void FocusOnPerson()
     {
-        CameraFollow.ChangeTarget(ID);
+        CameraFollow.ChangeTarget(Humano.ID);
     }
 }

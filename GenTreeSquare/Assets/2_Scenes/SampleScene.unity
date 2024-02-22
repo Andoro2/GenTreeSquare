@@ -24161,7 +24161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3cb9a22803603d4a83a6c251acf4102, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RootPersonID: 1
+  RootPersonID: 8
   PersonaPNG: {fileID: 5864170475566024609, guid: ac779179623eafe4c93ef1cbba554ac2,
     type: 3}
   ParejaPNG: {fileID: 3227127161602628392, guid: 4a744927afa23a647b543b85c4a58cfc,
