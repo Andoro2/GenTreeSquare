@@ -84,7 +84,7 @@ public class PeopleList : MonoBehaviour
         Debug.Log(filePath);
 
         File.WriteAllText(filePath, RegistryData);
-        Debug.Log("Guardado");
+        //Debug.Log("Guardado");
     }
     private void LoadFromJSON(bool Repeat = true)
     {
@@ -127,7 +127,7 @@ public class PeopleList : MonoBehaviour
             LoadFromJSON(Repeat);
         }
 
-        Debug.Log("Cargado");
+        //Debug.Log("Cargado");
     }
 
     public GameObject PersonaPreFab;
